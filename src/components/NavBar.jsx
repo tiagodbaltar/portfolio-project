@@ -7,7 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <button
           className="navbar-toggler"
@@ -18,7 +18,7 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <FontAwesomeIcon icon={faBars} style={{ color: "white" }} />
+          <FontAwesomeIcon icon={faBars} style={{ color: "grey" }} />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">

@@ -19,7 +19,7 @@ nav a.nav-link {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--primary-white) !important;
+  color: black;
   border-bottom: 0.1875rem solid var(--primary-dark);
 }
 
@@ -30,4 +30,31 @@ nav a.nav-link {
 
 .navbar-nav > li a:hover {
   opacity: 0.5;
+  cursor: pointer;
+}
+
+/* -------------HEADER---------------- */
+.header-wraper {
+  position: relative;
+  background: url(pexels-negative-space-169573.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-info {
+  color: rgb(255, 136, 0);
+  text-transform: uppercase;
+}
+
+.card-box {
+  background-color: coral;
 }
