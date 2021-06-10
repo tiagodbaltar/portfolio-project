@@ -1,5 +1,5 @@
 import React from "react";
-import Body from "./Body";
+// import Card from "./Card";
 
 const Header = () => {
   return (
@@ -7,9 +7,7 @@ const Header = () => {
       <div className="main-info">
         <h1>Welcome</h1>
       </div>
-      <div>
-        <Body />
-      </div>
+      <div>{/* <Card /> */}</div>
     </div>
   );
 };

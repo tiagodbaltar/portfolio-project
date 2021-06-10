@@ -11,6 +11,9 @@ body {
 }
 
 /* -------------NAV-LINKS---------------- */
+nav {
+  z-index: 2;
+}
 nav a.nav-link {
   letter-spacing: 0.0375rem;
   font-size: 0.9rem;
@@ -19,7 +22,7 @@ nav a.nav-link {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: black;
+  color: var(--primary-white) !important;
   border-bottom: 0.1875rem solid var(--primary-dark);
 }
 
@@ -39,7 +42,7 @@ nav a.nav-link {
   background: url(pexels-negative-space-169573.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 95vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -55,6 +58,23 @@ nav a.nav-link {
   text-transform: uppercase;
 }
 
+/* -------------CARD---------------- */
+
 .card-box {
   background-color: coral;
+}
+
+/* -------------Particles---------------- */
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
 }
