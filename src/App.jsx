@@ -1,29 +1,38 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar";
-import Header from "./components/Header";
+import Home from "./components/Home";
+import Aboutme from "./components/pages/Aboutme";
 import Particles from "react-particles-js";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import About from "./components/pages/Aboutme";
 
 function App() {
   return (
-    <>
-      <Particles
-        className="particles-canvas"
-        params={{
-          particles: {
-            number: {
-              value: 30,
-              density: {
-                enable: true,
-                value_area: 900,
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Particles
+          className="particles-canvas"
+          params={{
+            particles: {
+              number: {
+                value: 30,
+                density: {
+                  enable: true,
+                  value_area: 900,
+                },
               },
             },
-          },
-        }}
-      />
-      <NavBar />
-      <Header />
-    </>
+          }}
+        />
+        <Aboutme />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/aboutme" component={Aboutme} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

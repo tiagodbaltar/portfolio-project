@@ -54,7 +54,7 @@ nav a.nav-link {
 }
 
 .main-info {
-  color: rgb(255, 136, 0);
+  color: orange;
   text-transform: uppercase;
 }
 
@@ -64,10 +64,11 @@ nav a.nav-link {
   display: flex;
   position: relative;
   float: right;
-  margin: 1rem 10rem;
+  margin: 1rem 12rem;
   border-radius: 1rem;
-
-  background-color: coral;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  color: #fff;
 }
 
 /* -------------Particles---------------- */
@@ -83,4 +84,17 @@ nav a.nav-link {
   .particles-canvas {
     display: none;
   }
+}
+
+.btn-card {
+  background-color: orange;
+  border-style: none;
+  border-radius: 0.3125rem;
+  position: relative;
+  padding: 0.325rem;
+  margin: 1rem 8rem;
+}
+
+.btn-card:hover {
+  opacity: 0.7;
 }
